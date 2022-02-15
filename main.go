@@ -17,7 +17,8 @@ func main() {
 	accountSue := accounts.Account{Owner: clientSue,
 		AgencyNumber:  123,
 		AccountNumber: 123456,
-		Available:     2000,
 	}
+	accountSue.Deposit(100)
 	fmt.Println(accountSue)
+	fmt.Println(accountSue.GetSaldo())
 }
