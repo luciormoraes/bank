@@ -1,7 +1,9 @@
 package accounts
 
+import "github.com/luciormoraes/bank/clients"
+
 type Account struct {
-	Owner         string
+	Owner         clients.Owner
 	AgencyNumber  int
 	AccountNumber int
 	Available     float64
